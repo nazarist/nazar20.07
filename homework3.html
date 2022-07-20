@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advansed search</title>
+    <link rel="stylesheet" href="stylesHW3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="naw-bar">
+        <a href="homework1.html" class="a">Home</a>
+    </div>
+
+    <div class="logo">
+        <img src="googlelogo.png" class="google">
+    </div>
+    <br>
+    <div class="header">
+        Advanced search
+    </div>
+    <br>
+    <hr>
+    <div class="strings">
+        <form action="https://www.google.com/search" method="get">
+            <div class="string">
+                <label class="minilable" >
+                    <p class="row">Find pages with...</p>
+                </label>
+
+                <label class="minilable">
+                    <p class="row">To do this in the search box</p>
+                </label>
+
+            </div>
+
+            <div class="string">
+                <label class="minilabel">
+                <p class="row">all these words:</p>
+                </label>
+
+                <div class="stroka">
+                    <input type="text" class="stroka-line" name="as_q">
+                </div>
+
+                <label class="minilabel">
+                    <p class="row2">Type the important words: tricolor rat terrier:</p>
+                </label>
+
+            </div>
+
+            <div class="string">
+                <label class="minilabel">
+                <p class="row">this exact word or phrase:</p>
+                </label>
+
+                <div class="stroka">
+                    <input type="text" class="stroka-line" name="as_epq">
+                </div>
+
+                <label class="minilabel">
+                    <p class="row2">Put exact words in quotes: "rat terrier"</p>
+                </label>
+
+            </div>
+
+            <div class="string">
+                <label class="minilabel">
+                <p class="row">any of these words:</p>
+                </label>
+
+                <div class="stroka">
+                    <input type="text" class="stroka-line" name="as_oq">
+                </div>
+
+                <label class="minilabel">
+                    <p class="row2">Type OR between all the words you want: miniature OR standard</p>
+                </label>
+
+            </div>  
+            
+            <div class="string">
+                <label class="minilabel">
+                <p class="row">none of these words:</p>
+                </label>
+
+                <div class="stroka">
+                    <input type="text" class="stroka-line" name="as_eq">
+                </div>
+
+                <label class="minilabel">
+                    <p class="row2">Put a minus sign just before words you don't want: -rodent, -"Jack Russell"</p>
+                </label>
+
+            </div>
+
+            <input type="submit" value="Advansed search" class="btn">
+        </form>
+    </div>
+</body>
+</html>
