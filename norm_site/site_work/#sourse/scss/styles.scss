@@ -1,0 +1,551 @@
+@import "nullsstyles.scss";
+
+$orange:#FFE145;
+$orange-lite:#FFF7CC;
+$orange-dark:#B79C10;
+
+$gray:#9093A6;
+$gray-dark:#3F4255;
+$gray-lite:#D4D7E5;
+$gray-superlite:#F2F4FA;
+
+$font: 'Poppins', sans-serif;
+
+body{
+	font-family: $font;
+}
+
+.wraper {
+}
+.contend {
+	flex: 1 1 auto;
+}
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.header2 {
+	font-size: 34px;
+	font-weight: 300;
+	letter-spacing: 3px;
+	color:#3F4255;
+}
+
+
+.header {
+	background-color: #fff;
+	border-bottom: 1px solid $gray-lite;
+		&__flex{
+			display: flex;
+			justify-content:space-between;
+			margin: 0 20px;
+		}
+		&__logo {
+			padding: 20px 0;
+		}
+		&__login {
+			display: flex;
+			justify-content: space-around;
+			margin: auto 0;
+			line-height: 50px;
+			font-size: 20px;
+		}
+		&__login a{
+			margin-right: 40px;
+			text-shadow: 1px 1px 1px rgba(0,0,0,0.1) ;
+		}
+		&__link-one{
+			background: url(../images/Icons/ic/social/person.png) 0 44% no-repeat;
+			padding: 0 0 0 26px;
+			color: $gray-lite;
+		}
+		&__link-two{
+			background: url(../images/Icons/ic/social/cart.png)0 44% no-repeat;
+			padding-left: 26px ;
+			color: $gray-lite;
+		}
+		&__burger {
+			margin-top: 5px;
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			box-shadow: 1px 1px 6px rgba(0,0,0,0.2);
+			
+		}
+}
+
+
+.food {
+	&__all{
+		display: flex;
+		justify-content: space-between;
+		height: 600px;
+
+	}
+	&__title {
+	}
+	&__header {
+		margin: 70px 0;
+		font-size: 50px;
+		font-weight: 300;
+		color:#3F4255;
+	}
+	&__btns {
+		display: flex;
+		gap: 20px;
+
+	}
+	&__btn1:hover{
+		box-shadow: 3px 3px 0 $orange;
+		position: relative;
+		bottom:3px;
+		right: 3px;
+	} 
+	&__btn2:hover{
+		box-shadow: 3px 3px 0 $orange;
+		position: relative;
+		bottom:3px;
+		right: 3px;
+	} 
+	&__btn1 {
+		text-align: center;
+		width: 120px;
+		padding: 15px 0;
+		border: 2px solid $orange;
+	}
+	&__btn1 .ar {
+		font-weight: 600;
+		color:#3F4255;
+		margin-bottom: 3px;
+	}
+	&__btn2 {
+		text-align: center;
+		width: 120px;
+		padding: 15px 0;
+		border: 2px solid $orange;
+	}
+	&__btn2 .ar{
+		margin-bottom: 3px;
+		font-weight: 600;
+		color:#3F4255;
+	}
+	&__image {
+	}
+	&__eat {
+	}
+	&__eat img{
+		width: 600px;
+	}
+	&__salat {
+		position: relative;
+		bottom: 300px;
+		right: 120px;
+
+	}
+	&__arow{
+		position: relative;
+		left: 360px;
+		top: 30px;
+		
+	}
+	&__arow img{
+		position: relative;
+		bottom:90px;
+		left: 80px;
+		width: 40px;
+	}
+}
+
+
+.row {
+	background:#ffffff;
+	box-shadow: 1px 1px 30px rgba(0,0,0,0.14);
+	padding-left: 330px;
+	max-width: 1200px;
+	border-radius:0 8px 8px 0 ;
+	&__list {
+		display: flex;
+		width: 800px;
+		background:#ffffff;
+
+	}
+	&__deliwery {
+		align-items: end;
+		max-width: 250px;
+		padding: 15px;
+		font-size: 16px;
+		line-height: 24px;
+	}
+	&__deliwery:nth-child(1) {
+		margin-left: 60px;
+		background: url(../images/Icons/ic/Food/time-eat.png)left no-repeat;
+		padding-left: 60px;
+	}
+	&__deliwery:nth-child(2) {
+		background: url(../images/Icons/ic/Food/paris.png)left no-repeat;
+		padding-left: 60px;
+	}
+	&__deliwery:nth-child(3) {
+		background: url(../images/Icons/ic/Food/delivery.png)left no-repeat;
+		padding-left: 60px;
+	}
+}
+
+
+.restaurants {
+
+	&__all {
+		margin-bottom: 60px;
+	}
+	&__title {
+		display: flex;
+		justify-content: space-between;
+		margin: 40px 0;
+	}
+	&__header {
+		padding: 4px 0;
+	}
+	&__btn {
+		padding: 10px 18px;
+		border-radius:6px;
+		background-color: #F2F4FA;
+
+	}
+	&__have{
+
+	}
+	&__row {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__item {
+		display: flex;
+		width: 280px;
+		flex-direction: column;
+		box-shadow: 0 0 8px rgba(0,0,0,0.14);
+	}
+	&__break{
+		display: flex;
+		justify-content: space-between;
+		
+	}
+	&__btn1 button:nth-child(1){
+		background: url(../images/other/Vector.png) center no-repeat;
+		width: 50px;
+		height: 50px;
+		border-radius:50%;
+		box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.08);
+		position: relative;
+		bottom: 167px;
+		background-color: #fff;
+	}
+	&__btn1 button:nth-child(1):hover{
+		background-color: $gray-superlite;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+	}
+	&__btn2 button:nth-child(1):hover{
+		background-color: $gray-superlite;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+	}
+	&__btn2 button:nth-child(1){
+		background: url(../images/other/Vector-1.png)center no-repeat;
+		width: 50px;
+		height: 50px;
+		border-radius:50%;
+		box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.08);
+		position: relative;
+		bottom: 167px;
+		background-color: #fff;
+	}
+}
+
+
+.footer {
+	color:white;
+	background: #3F4255;
+	&__body {
+		padding: 38px 0;
+	}
+	&__nav {
+	}
+	&__columns {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__column img {
+		padding: 0px 0 50px 0;
+	}
+	&__column p {
+		margin-bottom: 17px;
+		letter-spacing: 0.5;
+		font-weight: 700;
+		color:#D4D7E5;
+	}
+	&__logo{
+		width: 300px;
+		border-bottom: 1px solid white;
+		
+	}
+	&__google {
+		padding-top: 50px;
+	}
+	&__column-title {
+		font-size: 22px;
+		margin-bottom: 22px;
+	}
+	&__ass {
+		padding: 60px 0 0px 0;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__icon img{
+		margin-right: 18px;
+	}
+	&__text a {
+		color:white;
+		margin-right: 25px;
+	}
+}
+
+
+.input {
+	background: #F2F4FA;
+	&__row {
+		display: flex;
+		justify-content: space-around;
+		padding: 60px 0;
+	}
+	&__title {
+		margin: 20px;
+	}
+	&__header {
+		font-size: 32px;
+		font-weight: 300;
+		letter-spacing: 3px;
+		color:#3F4255;
+	}
+	&__text {
+		color:#3F4255;
+		font-weight: 300;
+		line-height: 20px;
+		padding: 20px 0;
+	}
+	&__input {
+		display: flex;
+		flex-direction: row;
+		margin: 30px;
+	}
+	&__string input {
+		width: 300px;
+		height: 65px;
+		border-radius: 6px;
+		box-shadow:0 8px 40px rgba(0,0,0,0.08);
+		padding-left:40px;
+		margin-right: 5px;
+		font-size: 16px;
+	}
+	&__btn{
+		
+	}
+	&__btn button{
+		height: 65px;
+		width: 75px;
+		background-color: $orange;
+		border-radius:6px
+	}
+	&__btn button:hover{
+		background-color: #FFF7CC;
+		color:#B79C10;
+	}
+	&__btn button:active{
+		background-color: #FFF7CC;
+		color:#B79C10;
+	}
+}
+
+
+.specialities {
+	&__all {
+		padding: 50px 0 30px;
+	}
+	&__title {
+		display: flex;
+		justify-content: space-between;
+		padding: 10px 0px 30px 0;
+	}
+	&__header {
+	}
+	&__btn button{
+		padding: 16px 24px;
+		border-radius:6px;
+
+	}
+	&__row {
+		display: flex;
+		justify-content: space-evenly;
+	}
+	&__plitu {
+		width: 136px;
+		height: 136px;
+		box-shadow: 0px 2px 16px rgba(60, 62, 74, 0.08);
+		border-radius: 6px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+	}
+	&__img {
+		padding-bottom: 16px;
+	}
+	&__img-header {
+	}
+	&__break{
+		display: flex;
+		justify-content: space-between;
+		
+	}
+	&__btn1 button:nth-child(1){
+		background: url(../images/other/Vector.png) center no-repeat;
+		width: 50px;
+		height: 50px;
+		border-radius:50%;
+		box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.08);
+		position: relative;
+		bottom: 94px;
+		background-color: #fff;
+	}
+	&__btn2 button:nth-child(1){
+		background: url(../images/other/Vector-1.png)center no-repeat;
+		width: 50px;
+		height: 50px;
+		border-radius:50%;
+		box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.08);
+		position: relative;
+		bottom: 94px;
+		background-color: #fff;
+	}
+	&__btn1 button:nth-child(1):hover{
+		background-color: $gray-superlite;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+	}
+	&__btn2 button:nth-child(1):hover{
+		background-color: $gray-superlite;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+	}
+}
+
+
+.photo {
+	&__all {
+		background: url(../images/other/bg.png) no-repeat;
+		max-width: 1500px;
+		margin: 0 auto;
+
+	}
+	&__circles {
+		width: 800px;
+		margin: 0 auto;
+
+	}
+	&__row{
+		display: flex;
+		justify-content: space-evenly;
+		position: relative;
+		bottom:40px;
+	}
+	&__circle {
+	}
+	&__kolo1 {
+		width: 100px;
+		height: 100px;
+		border-radius:50%;
+		border:1px solid $orange-dark;
+		position: relative;
+		top:80px;
+	}
+	&__kolo2 {
+		width: 100px;
+		height: 100px;
+		border-radius:50%;
+		background-color: $orange;
+	}
+	&__kolo2 span {
+		font-weight: 700;
+		font-size: 50px;
+		color:#3F4255;
+		position: relative;
+		top: 10px;
+		left: 30px;
+
+	}
+	&__span{
+		position: relative;
+		top: 10px;
+		left: 37px;
+	}
+	&__title {
+		text-align: center;
+		font-weight: 600;
+	}
+}
+
+
+.map {
+	&__all {
+		margin: 50px;
+	}
+	&__all img{
+		width: 1100px;
+	}
+}
+
+
+.incyagram {
+
+	&__all {
+		margin: 20px 0;
+	}
+	&__title {
+		font-size: 42px;
+		font-weight: 300;
+		margin: 30px 0;
+	}
+	&__title span{
+		color:#9093A6;
+
+	}
+	&__photos {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__photo {
+	}
+	&__photo img {
+		width: 270px;
+	}
+}
+
+.restaurants {
+	&__all {
+	}
+	&__title {
+	}
+	&__header {
+	}
+	&__btn {
+	}
+	&__row {
+	}
+	&__item {
+		color:#3F4255;
+	}
+	&__break {
+	}
+	&__btn1 {
+	}
+	&__btn2 {
+	}
+}
+
